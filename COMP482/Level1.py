@@ -95,6 +95,7 @@ def decompress():
 
 root = tk.Tk()
 root.title("LZW Text Compression (Level 1)")
+root.geometry("365x70")
 compress_button = tk.Button(root, text="Compress", command=compress)
 compress_button.pack()
 decompress_button = tk.Button(root, text="Decompress", command=decompress)
