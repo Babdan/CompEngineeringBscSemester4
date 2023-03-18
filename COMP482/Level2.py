@@ -5,6 +5,7 @@ from PIL import Image
 import os
 import math
 
+
 # Dorantes-Nikolaev, Bogdan Itsam
 # 3/08/2021, COMP 482 Programming Studio, Project 1: Image Compression using LZW coding: Level 2
 
@@ -57,6 +58,7 @@ def compress():
     results = f"Entropy: {entropy:.3f}\nAverage code length: {average_code_length:.3f}\nCompressed file size: {compressed_file_size} bytes\nCompression ratio: {compression_ratio:.3f}"
     messagebox.showinfo("Compression Results", results)
 
+
 def decompress():
     file_path = filedialog.askopenfilename(filetypes=[("Text Files", "*.txt")])
     if not file_path:
@@ -98,7 +100,7 @@ root = tk.Tk()
 root.title("LZW Image Compression (Level 2)")
 root.geometry("365x70")
 compress_button = tk.Button(root, text="Compress", command=compress)
-compress_button.pack()
+compress_button.pack(fill=tk.X)
 decompress_button = tk.Button(root, text="Decompress", command=decompress)
-decompress_button.pack()
+decompress_button.pack(fill=tk.X)
 root.mainloop()
