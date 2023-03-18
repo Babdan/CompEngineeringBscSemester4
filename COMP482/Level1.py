@@ -3,6 +3,7 @@ from tkinter import filedialog
 import os
 from collections import defaultdict
 
+
 # Dorantes-Nikolaev, Bogdan Itsam
 # 3/08/2021, COMP 482 Programming Studio, Project 1: Image Compression using LZW coding: Level 1
 
@@ -97,7 +98,7 @@ root = tk.Tk()
 root.title("LZW Text Compression (Level 1)")
 root.geometry("365x70")
 compress_button = tk.Button(root, text="Compress", command=compress)
-compress_button.pack()
+compress_button.pack(fill=tk.X)
 decompress_button = tk.Button(root, text="Decompress", command=decompress)
-decompress_button.pack()
+decompress_button.pack(fill=tk.X)
 root.mainloop()
